@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <ProgressBar
+        android:id="@+id/sysProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/sysIvLogo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/sysProgressBar"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:paddingBottom="2dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/sysTvRowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sysIvLogo"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="1dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:text="Grid View Row Title" />
+
+    <TextView
+        android:id="@+id/sysTvRowDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sysTvRowTitle"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="1dp"
+        android:text="Grid View Row Description"
+        android:textSize="10sp" />
+</RelativeLayout>
