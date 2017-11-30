@@ -12,9 +12,9 @@ git commit -m "Add Readme & Git Commit File"
 git push --all
 ```
 ### Task Assignee
-* AdMob Integration
+* [x] AdMob Integration
     * [x] Bannar Ads
     * [x] Interstitial Ads
     * [x] Rewarded Video Ads
-* Facebook Integration
+* [ ] Facebook Integration
     * [ ] Facebook APP
