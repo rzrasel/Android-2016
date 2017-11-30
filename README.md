@@ -11,6 +11,10 @@ git add .
 git commit -m "Add Readme & Git Commit File"
 git push --all
 ```
-### Task
+### Task Assignee
+* AdMob Integration
+    [x] Bannar Ads
+    [x] Interstitial Ads
+    [x] Rewarded Video Ads
 * Facebook Integration
     * [ ] Facebook APP
