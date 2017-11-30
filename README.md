@@ -13,8 +13,8 @@ git push --all
 ```
 ### Task Assignee
 * AdMob Integration
-    [x] Bannar Ads
-    [x] Interstitial Ads
-    [x] Rewarded Video Ads
+    * [x] Bannar Ads
+    * [x] Interstitial Ads
+    * [x] Rewarded Video Ads
 * Facebook Integration
     * [ ] Facebook APP
