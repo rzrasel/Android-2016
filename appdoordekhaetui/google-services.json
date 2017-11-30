@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "32182824372",
+    "firebase_url": "https://and-project-16481.firebaseio.com",
+    "project_id": "and-project-16481",
+    "storage_bucket": "and-project-16481.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32182824372:android:504b0934483bcf0b",
+        "android_client_info": {
+          "package_name": "me.apphive.doordekhaetui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32182824372-6ea1sf5iqgbhqvtl5oqq0uhj3fb3v6cg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdnW-k1YPqbGdgMxZ6aEOwyt6IFUHHT1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

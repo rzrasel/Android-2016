@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DoorDekhaEtui.iml" filepath="$PROJECT_DIR$/DoorDekhaEtui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DoorDekhaEtui-201711.0.1.iml" filepath="$PROJECT_DIR$/DoorDekhaEtui-201711.0.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/appdoordekhaetui/appdoordekhaetui.iml" filepath="$PROJECT_DIR$/appdoordekhaetui/appdoordekhaetui.iml" />
       <module fileurl="file://$PROJECT_DIR$/librarycore/librarycore.iml" filepath="$PROJECT_DIR$/librarycore/librarycore.iml" />
     </modules>

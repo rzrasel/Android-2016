@@ -16,6 +16,7 @@ import com.rz.librarycore.admob.AdMobInterstitial;
 import com.rz.librarycore.admob.ServiceAdMobInterstitial;
 
 import me.apphive.doordekhaetui.R;
+import me.apphive.doordekhaetui.service.MInstanceIdService;
 import me.apphive.doordekhaetui.service.ServiceAdaptChannelURL;
 import me.apphive.doordekhaetui.service.ServiceAdaptHostingURL;
 
@@ -34,6 +35,17 @@ public class ActSplash extends AppCompatActivity {
         idIncludeFooterView = (View) findViewById(R.id.idIncLayFooter);
         new AdMobIntegration();
         //onUpdateVolume();
+        Thread thread = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    new MInstanceIdService().onTokenRefresh();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        thread.start();
         Intent intentActivity = new Intent(this, ActDashboard.class);
         startActivity(intentActivity);
         this.finish();
