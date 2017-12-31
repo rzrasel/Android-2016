@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#AA64E4</color>
+    <color name="colorPrimary">#AA64E4</color>
+    <color name="colorAccent">#69A7CC</color>
+    <color name="colorPrimaryDarkLanding">#096093</color>
+    <color name="colorPrimaryLanding">#096093</color>
+    <color name="colorAccentLanding">#69A7CC</color>
+    <color name="colorSecondaryLanding">#888788</color>
+    <color name="colorTitleTextLanding">#69A7CC</color>
+</resources>

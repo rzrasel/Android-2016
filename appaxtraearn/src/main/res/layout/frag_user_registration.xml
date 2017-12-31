@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2476a6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:id="@+id/idRelayContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/border_shadow"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="6dp">
+
+                <RelativeLayout
+                    android:id="@+id/idRelayTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/border_transparent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Registration"
+                        android:textColor="#096093"
+                        android:textSize="30sp"
+                        app:fontFamily="@font/encode_sans_extrabold" /><!--F5EFF7-->
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/idViewSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/idRelayTop"
+                    android:background="#2476a6" />
+
+                <RelativeLayout
+                    android:id="@+id/idReLayBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idViewSeparator"
+                    android:background="@drawable/border_transparent"
+                    android:paddingTop="24dp">
+
+                    <EditText
+                        android:id="@+id/sysETxtUserEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/border_semi_circle"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="#096093"
+                        android:textColorHint="#428BB6"
+                        android:textCursorDrawable="@drawable/cursor_blue"
+                        app:fontFamily="@font/encode_sans_expanded_regular" />
+
+                    <EditText
+                        android:id="@+id/sysETxtUserPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sysETxtUserEmail"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/border_semi_circle"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="#096093"
+                        android:textColorHint="#428BB6"
+                        android:textCursorDrawable="@drawable/cursor_blue"
+                        app:fontFamily="@font/encode_sans_expanded_regular" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sysETxtUserPassword"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/border_semi_circle_transparent"
+                        android:foreground="@drawable/ripple_effect"
+                        android:text="Registration"
+                        android:textAllCaps="false"
+                        android:textColor="#69A7CC"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/encode_sans_expanded_semi_bold" /><!--F5EFF7-->
+                </RelativeLayout>
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--android:background="@drawable/border_semi_circle_transparent"-->
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/idReLayTop"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="-18dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/border_semi_circle_transparent"
+                    android:foreground="@drawable/ripple_effect"
+                    android:text="+" />-->
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/sysFloatBtnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="24dp"
+                    android:clickable="true"
+                    android:src="@drawable/cross_sign"
+                    app:backgroundTint="#2476a6"
+                    app:borderWidth="0dp"
+                    app:elevation="6dp"
+                    app:fabSize="normal"
+                    app:layout_anchor="@id/idRelayTop"
+                    app:layout_anchorGravity="bottom|right|end"
+                    app:rippleColor="#00314e" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idRelayContainer"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Privacy Policy"
+                        android:textAllCaps="false"
+                        android:textColor="#428BB6"
+                        android:textSize="10sp"
+                        android:textStyle="italic"
+                        app:fontFamily="@font/encode_sans_extralight" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Forgot Password?"
+                        android:textAllCaps="false"
+                        android:textColor="#69A7CC"
+                        android:textSize="11sp"
+                        app:fontFamily="@font/encode_sans_light" /><!--FFC47C-->
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Powered by , Version - 1.0"
+                    android:textColor="#69A7CC"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/font_dancing_script" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="By signing up, you agree to our Terms and that you have read our Privacy Policy"
+                    android:textColor="#69A7CC"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/encode_sans_expanded_thin" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--<android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingButton"
+            app:backgroundTint="#FF0000"android:elevation="5dp"
+            app:layout_anchor="@id/idReLayTop"
+            app:layout_anchorGravity="bottom|right|end"
+            app:rippleColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_done" />-->
+    </ScrollView>
+
+</RelativeLayout>

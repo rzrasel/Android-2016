@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/sysDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/idLinLayMainContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/idAppBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="true"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/sysToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:clipToPadding="true"></android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <FrameLayout
+                android:id="@+id/sysFrameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sysIdDrawerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|start"
+            android:background="#ffffff"
+            android:fitsSystemWindows="true">
+            <!--android:layout_marginTop="?attr/actionBarSize"-->
+
+            <ListView
+                android:id="@+id/sysDrawerList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="#00ffffff"
+                android:choiceMode="singleChoice"
+                android:divider="#e5e5e5"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>-->
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">monospace</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">monospace</item>
+    </style>
+
+    <style name="TextAppearance">
+        <!--<item name="fontFamily">@font/app_font</item>-->
+    </style>
+
+    <style name="ThemeLanding" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryLanding</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkLanding</item>
+        <item name="colorAccent">@color/colorAccentLanding</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <!-- style for the action bar backgrounds -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <!--<item name="android:background">@drawable/actionbar_background</item>
+        <item name="background">@drawable/actionbar_background</item>-->
+        <item name="android:background">@color/colorPrimaryLanding</item>
+        <item name="background">@color/colorPrimaryLanding</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorTitleTextLanding</item>
+        <!--<item name="android:textSize">12sp</item>-->
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/encode_sans_extrabold
+        </item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ThemeDashboard" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+    </style>
+
+    <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#ff0000</item>
+    </style>
+</resources>
