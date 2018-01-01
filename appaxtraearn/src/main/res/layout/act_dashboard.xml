@@ -48,15 +48,21 @@
             android:background="#ffffff"
             android:fitsSystemWindows="true">
             <!--android:layout_marginTop="?attr/actionBarSize"-->
+            <View
+                android:id="@+id/idDrawerTopBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#AA64E4" />
 
             <ListView
                 android:id="@+id/sysDrawerList"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_below="@+id/idDrawerTopBar"
                 android:layout_gravity="start"
                 android:background="#00ffffff"
                 android:choiceMode="singleChoice"
-                android:divider="#e5e5e5"
+                android:divider="#E0C0F9"
                 android:dividerHeight="1dp"
                 android:scrollbars="none" />
         </RelativeLayout>

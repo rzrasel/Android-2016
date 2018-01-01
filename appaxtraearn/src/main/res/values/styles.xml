@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!--<item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
         <item name="android:buttonStyle">@style/RobotoButtonStyle</item>-->
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
     </style>
 
     <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
@@ -60,6 +61,6 @@
     </style>
 
     <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="color">#ff0000</item>
+        <item name="color">#7A22C2</item>
     </style>
 </resources>

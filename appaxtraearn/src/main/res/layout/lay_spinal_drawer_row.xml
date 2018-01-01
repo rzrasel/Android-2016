@@ -1,26 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:layout_height="wrap_content"
     android:paddingBottom="16dp"
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
     android:paddingTop="16dp">
 
-    <TextView
+    <!--<TextView
         android:id="@+id/sysDrawerTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Drawer Title" />
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:text="D" />-->
+
+    <ImageView
+        android:id="@+id/sysImgViewDrawerIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/sysDrawerDescription"
-        android:layout_width="0dp"
+        android:id="@+id/sysDrawerTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Drawer Description" />
-</LinearLayout>
+        android:layout_alignLeft="@+id/sysImgViewDrawerIcon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="32dp"
+        android:gravity="left"
+        android:text="Drawer Description"
+        android:textColor="#AA64E4"
+        app:fontFamily="@font/encode_sans_expanded_semi_bold" /><!--7A22C2-->
+</RelativeLayout>

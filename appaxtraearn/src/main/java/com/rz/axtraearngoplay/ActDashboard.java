@@ -111,11 +111,11 @@ public class ActDashboard extends AppCompatActivity {
             spinalRowDrawerDraw.spinalToolBar.onHideActionBar()
                     .initToolBar(argToolbar)
                     .onSetActionBar()
-                    .onSetTitleText("Spinal Row Drawer")
-                    .onSetTitleTextColor("#AA64E4")
+                    .onSetTitleText("Dashboard")
+                    .onSetTitleTextColor("#E0C0F9")
                     //.onSetSubTitleText("Sub Title Spinal Row Drawer")
                     //.onSetSubTitleTextColor("#ffffff")
-                    //.onSetTitleFont("fonts/lobster-1.3.otf")
+                    .onSetTitleFont("fonts/encode_sans_extrabold.ttf")
                     //.onSetSubTitleFont("fonts/alex-brush-regular.ttf")
                     .onShowHomeButton()
                     .onSetStatusBarDark(true);
@@ -130,22 +130,41 @@ public class ActDashboard extends AppCompatActivity {
 
         public OnDrawerSetup onSetDrawerMenuFields() {
             //ArrayList<SharkModelRowViewFields> rowViewFieldListItems = new ArrayList<SharkModelRowViewFields>();
+            spinalRowDrawerDraw.spinalDrawerMenu.onSetRowViewField(SpinalRowDrawerDraw.FIELD_TYPE.IMAGE_VIEW, "sysImgViewDrawerIcon");
             spinalRowDrawerDraw.spinalDrawerMenu.onSetRowViewField(SpinalRowDrawerDraw.FIELD_TYPE.TEXT_VIEW, "sysDrawerTitle");
-            spinalRowDrawerDraw.spinalDrawerMenu.onSetRowViewField(SpinalRowDrawerDraw.FIELD_TYPE.TEXT_VIEW, "sysDrawerDescription");
             return this;
         }
 
         public OnDrawerSetup onSetDrawerMenuItems() {
             HashMap<String, String> eachRowDataItems = null;
             eachRowDataItems = new HashMap();
-            eachRowDataItems.put("sysDrawerTitle", "Title-01");
-            eachRowDataItems.put("sysDrawerDescription", "Description-01");
-            spinalRowDrawerDraw.spinalDrawerMenu.onSetItemData(eachRowDataItems, FragUserLogin.class);
+            eachRowDataItems.put("sysImgViewDrawerIcon", R.drawable.img_menu_dashboard + "");
+            eachRowDataItems.put("sysDrawerTitle", "Dashboard");
+            spinalRowDrawerDraw.spinalDrawerMenu.onSetItemData(eachRowDataItems, FragDashboard.class);
+            //|------------------
             eachRowDataItems = new HashMap();
-            eachRowDataItems.put("sysDrawerTitle", "Title-02");
-            eachRowDataItems.put("sysDrawerDescription", "Description-02");
+            eachRowDataItems.put("sysImgViewDrawerIcon", R.drawable.img_menu_profile_male + "");
+            eachRowDataItems.put("sysDrawerTitle", "Profile");
+            spinalRowDrawerDraw.spinalDrawerMenu.onSetItemData(eachRowDataItems, FragDashboard.class);
+            //|------------------
+            eachRowDataItems = new HashMap();
+            eachRowDataItems.put("sysImgViewDrawerIcon", R.drawable.img_menu_settings + "");
+            //https://www.flaticon.com/free-icon/settings_295968#term=settings&page=1&position=65
+            //https://www.flaticon.com/search?word=profile
+            eachRowDataItems.put("sysDrawerTitle", "Settings");
             spinalRowDrawerDraw.spinalDrawerMenu.onSetItemData(eachRowDataItems, FragUserRegistration.class);
             modelDrawerListItems = spinalRowDrawerDraw.spinalDrawerMenu.onGetDataList();
+            //|------------------
+            eachRowDataItems = new HashMap();
+            eachRowDataItems.put("sysImgViewDrawerIcon", R.drawable.img_menu_report + "");
+            eachRowDataItems.put("sysDrawerTitle", "Report");
+            spinalRowDrawerDraw.spinalDrawerMenu.onSetItemData(eachRowDataItems, FragDashboard.class);
+            //|------------------
+            eachRowDataItems = new HashMap();
+            eachRowDataItems.put("sysImgViewDrawerIcon", R.drawable.img_menu_rules + "");
+            eachRowDataItems.put("sysDrawerTitle", "Rules");
+            spinalRowDrawerDraw.spinalDrawerMenu.onSetItemData(eachRowDataItems, FragDashboard.class);
+            //|------------------
             return this;
         }
 

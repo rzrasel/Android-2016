@@ -23,7 +23,7 @@
             android:id="@+id/idIndicatorDotLine"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#d5d6d9" />
+            android:background="#C38CF0" />
 
         <RelativeLayout
             android:layout_width="match_parent"
