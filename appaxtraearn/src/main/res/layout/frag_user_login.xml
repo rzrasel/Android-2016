@@ -58,41 +58,76 @@
                     android:background="@drawable/border_transparent"
                     android:paddingTop="24dp">
 
-                    <EditText
-                        android:id="@+id/sysETxtUserEmail"
+                    <LinearLayout
+                        android:id="@+id/idLinLayEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:background="@drawable/border_semi_circle"
-                        android:hint="Email"
-                        android:inputType="textEmailAddress"
-                        android:maxLines="1"
-                        android:textColor="#096093"
-                        android:textColorHint="#428BB6"
-                        android:textCursorDrawable="@drawable/cursor_blue"
-                        app:fontFamily="@font/encode_sans_expanded_regular" />
+                        android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/sysETxtUserPassword"
+                        <ImageView
+                            android:id="@+id/idImgViewFontEmail"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/img_font_email" />
+
+                        <EditText
+                            android:id="@+id/sysETxtUserEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/idImgViewFontEmail"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/form_log_regi_textview"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textColor="#096093"
+                            android:textColorHint="#428BB6"
+                            android:textCursorDrawable="@drawable/cursor_blue"
+                            app:fontFamily="@font/encode_sans_expanded_regular" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/idLinLayPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/sysETxtUserEmail"
+                        android:layout_below="@+id/idLinLayEmail"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/border_semi_circle"
-                        android:hint="Password"
-                        android:inputType="textPassword"
-                        android:maxLines="1"
-                        android:textColor="#096093"
-                        android:textColorHint="#428BB6"
-                        android:textCursorDrawable="@drawable/cursor_blue"
-                        app:fontFamily="@font/encode_sans_expanded_regular" />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/idImgViewFontPassword"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/img_font_password" />
+
+                        <EditText
+                            android:id="@+id/sysETxtUserPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/form_log_regi_textview"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="#096093"
+                            android:textColorHint="#428BB6"
+                            android:textCursorDrawable="@drawable/cursor_blue"
+                            app:fontFamily="@font/encode_sans_expanded_regular" />
+                    </LinearLayout>
 
                     <Button
                         android:id="@+id/sysBtnLogin"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/sysETxtUserPassword"
+                        android:layout_below="@+id/idLinLayPassword"
                         android:layout_marginBottom="8dp"
                         android:layout_marginTop="24dp"
                         android:background="@drawable/border_semi_circle_transparent"
