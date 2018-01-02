@@ -88,6 +88,7 @@
                             android:textColor="#096093"
                             android:textColorHint="#428BB6"
                             android:textCursorDrawable="@drawable/cursor_blue"
+                            android:textSize="16dp"
                             app:fontFamily="@font/encode_sans_expanded_regular" />
                     </LinearLayout>
 
@@ -96,7 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/idLinLayEmail"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="16dp"
                         android:background="@drawable/border_semi_circle"
                         android:orientation="horizontal">
 
@@ -121,6 +122,7 @@
                             android:textColor="#096093"
                             android:textColorHint="#428BB6"
                             android:textCursorDrawable="@drawable/cursor_blue"
+                            android:textSize="16dp"
                             app:fontFamily="@font/encode_sans_expanded_regular" />
                     </LinearLayout>
 

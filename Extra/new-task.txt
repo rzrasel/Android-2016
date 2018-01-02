@@ -1,0 +1,78 @@
+https://www.regextester.com/94501
+http://www.phpzag.com/15-regular-expressions-for-php-developers/
+https://stackoverflow.com/questions/15699101/get-the-client-ip-address-using-php
+https://stackoverflow.com/questions/3650006/get-country-of-ip-address-with-php
+https://dzone.com/articles/get-country-ip-address-php
+The Best Way to Store Password in Database - PHP 2017 Edition
+https://jonsuh.com/blog/securely-hash-passwords-with-php/
+https://gist.github.com/jeremykendall/8158884
+http://www.phpbuilder.com/articles/application-architecture/security/most-secure-password-encryption-methods-in-php.html
+<?php
+echo base64_encode(password_hash("rasmuslerdorf", PASSWORD_BCRYPT));
+
+↪
+↪
+https://www.sitepoint.com/regular-expressions-php/
+https://php.earth/docs/general/regex
+https://www.regextester.com/94501
+http://blog.chapagain.com.np/php-validation-regex-email-name-price-age-filter/
+https://paulund.co.uk/regular-expression-to-validate-email-address
+↪
+↪
+if (!preg_match("/[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+.[a-zA-Z]{2,4}/", $emailAddress)){
+    //Email address is invalid.
+}
+↪
+↪
+"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+↪
+↪
+/^[\w\-.+_%]+@[\w\.\-]+\.[A-Za-z0-9]{2,}$/gm
+↪
+↪
+function checkEmail($email) {
+  if(preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $email)){
+    list($username,$domain)=split('@',$email);
+    if(!checkdnsrr($domain,'MX')) {
+      return false;
+    }
+    return true;
+  }
+  return false;
+↪
+↪
+^[a-zA-Z'.#@$%&*-]+$
+
+
+
+<?php
+function get_client_ip() {
+    $ipaddress = '';
+    if (getenv('HTTP_CLIENT_IP'))
+        $ipaddress = getenv('HTTP_CLIENT_IP');
+    else if(getenv('HTTP_X_FORWARDED_FOR'))
+        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+    else if(getenv('HTTP_X_FORWARDED'))
+        $ipaddress = getenv('HTTP_X_FORWARDED');
+    else if(getenv('HTTP_FORWARDED_FOR'))
+        $ipaddress = getenv('HTTP_FORWARDED_FOR');
+    else if(getenv('HTTP_FORWARDED'))
+       $ipaddress = getenv('HTTP_FORWARDED');
+    else if(getenv('REMOTE_ADDR'))
+        $ipaddress = getenv('REMOTE_ADDR');
+    else
+        $ipaddress = 'UNKNOWN';
+    return $ipaddress;
+}
+$ip = get_client_ip();
+$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}"));
+echo $details->country;
+
+https://www.geoip-db.com/json/
+http://ipinfo.io/43.224.119.52
+http://ip-api.io/json/43.224.119.52
+https://www.iplocate.io/api/lookup/43.224.119.52
+http://lite.ip2location.com/databases
+http://www.agame.com/games/racing
+https://www.miniclip.com/games/en/
+https://www.bigfishgames.com/online-games/index.html
