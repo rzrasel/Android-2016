@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "400536094582",
+    "firebase_url": "https://spades-droid.firebaseio.com",
+    "project_id": "spades-droid",
+    "storage_bucket": "spades-droid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400536094582:android:e6d2cafe33f20ae9",
+        "android_client_info": {
+          "package_name": "ksmori.hu.ait.spades"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400536094582-t3qatmp1dheaatk8hghfmct02rf2behl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ksmori.hu.ait.spades",
+            "certificate_hash": "0e6904173bbf542f77c2f9430b19433d6fbc4b05"
+          }
+        },
+        {
+          "client_id": "400536094582-78690h96ii67ikdqek9itbmvig74po6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCay3CSqA5x4-0TZdkcmwndl6lcuAvpeLQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400536094582-78690h96ii67ikdqek9itbmvig74po6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

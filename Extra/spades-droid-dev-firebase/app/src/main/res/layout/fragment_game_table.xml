@@ -1,0 +1,44 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/green_felt_bkg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/GameTableTheme">
+
+
+    <include layout="@layout/player_box_top"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="32%"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+
+    <include layout="@layout/player_box_left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_heightPercent="32%"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+
+    <include layout="@layout/player_box_right"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_heightPercent="32%"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <include layout="@layout/player_box_bottom"
+        android:id="@+id/player_box_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_heightPercent="32%"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</android.support.percent.PercentRelativeLayout>

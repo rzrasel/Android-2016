@@ -11,7 +11,9 @@ package com.rz.axtraearngoplay.location;
  * https://github.com/ramanangrs/getFusedLocationProviderClient
  *
  * https://github.com/smtrz/GPSTracker-Android
+ * https://github.com/mgks/Android-SmartWebView
  */
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -141,7 +143,7 @@ public class FusedLocationNew implements ConnectionCallbacks, OnConnectionFailed
         // The final argument to {@code requestLocationUpdates()} is a LocationListener
         // (http://developer.android.com/reference/com/google/android/gms/location/LocationListener.html).
 
-        LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
+        //LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
     }
 
     /**
@@ -201,7 +203,7 @@ public class FusedLocationNew implements ConnectionCallbacks, OnConnectionFailed
         // the Start Updates button.
         //
         if (lastKnownLocation) {
-            mCurrentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+            //mCurrentLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
             if (mCurrentLocation != null && (mCurrentLocation.getTime() - Calendar.getInstance().getTime().getTime()) < diffTime
                     && mCurrentLocation.getAccuracy() <= minAccuracy) {
                 mCallback.onLocationResult(mCurrentLocation);
