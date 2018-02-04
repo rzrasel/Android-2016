@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Axtra-Earn-Google-V-201712.0.1.iml" filepath="$PROJECT_DIR$/Axtra-Earn-Google-V-201712.0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Axtra-Earn-Google-V-201712.0.1.iml" filepath="$PROJECT_DIR$/Axtra-Earn-Google-V-201712.0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appaxtraearn/appaxtraearn.iml" filepath="$PROJECT_DIR$/appaxtraearn/appaxtraearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/appaxtraearn/appaxtraearn.iml" filepath="$PROJECT_DIR$/appaxtraearn/appaxtraearn.iml" />
     </modules>
   </component>

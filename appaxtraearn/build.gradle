@@ -6,8 +6,8 @@ android {
         applicationId "com.rz.axtraearngoplay"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 20171201
-        versionName "201712.0.1"
+        versionCode 201802002
+        versionName "201802.00.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
