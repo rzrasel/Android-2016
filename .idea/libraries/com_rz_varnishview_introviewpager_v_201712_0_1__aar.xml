@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.rz.varnishview.introviewpager-v-201712.0.1:@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/com.rz.varnishview.introviewpager-v-201712.0.1.aar/0cb9ba06cc7800ba71f738b63b912c4a/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/com.rz.varnishview.introviewpager-v-201712.0.1.aar/0cb9ba06cc7800ba71f738b63b912c4a/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/com.rz.varnishview.introviewpager-v-201712.0.1.aar/675d94b94866b1eea9d7b5b1d9fcd2eb/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/com.rz.varnishview.introviewpager-v-201712.0.1.aar/675d94b94866b1eea9d7b5b1d9fcd2eb/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
