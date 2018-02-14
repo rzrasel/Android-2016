@@ -1,1 +1,1 @@
-include ':appaxtraearn'
+include ':appaxtraearn', ':libraryalienfragment'

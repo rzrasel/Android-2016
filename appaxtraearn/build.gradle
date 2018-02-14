@@ -4,11 +4,17 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.rz.axtraearngoplay"
-        minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 201802002
-        versionName "201802.00.2"
+        minSdkVersion extMinSdkVersion
+        targetSdkVersion extTargetSdkVersion
+        versionCode extVersionCode
+        versionName extVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        def date = new Date();
+        //def formattedDate = date.format('yyyyMMddHHmmss')
+        def formattedDate = date.format('yyyyMMdd')
+        //ext.extAppName = android.defaultConfig.getApplicationId()
+        def apkName = extAppName + ' - (' + applicationId + ') ' + 'V-' + defaultConfig.versionName + ' - ' + formattedDate + ' '
+        setProperty("archivesBaseName", "$apkName")
     }
     buildTypes {
         release {
@@ -36,6 +42,8 @@ dependencies {
     compile(name: 'com.rz.varnishview.introviewpager-v-201712.0.1', ext: 'aar')
     compile(name: 'com.rz.varnishview.spinallistdrawer-v-201712.0.1', ext: 'aar')
     //compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    //compile project(':librarycore')
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+//beyond fragment

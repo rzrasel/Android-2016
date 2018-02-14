@@ -25,3 +25,13 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+ext {
+    extAppName = "Axtra Earn"
+    extCompileSdkVersion = 26
+    extBuildToolsVersion = '26.0.2'
+
+    extMinSdkVersion = 15
+    extTargetSdkVersion = 26
+    extVersionCode = 201802013
+    extVersionName = "201802.01.3"
+}
