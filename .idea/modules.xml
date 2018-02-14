@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Axtra-Earn-Google-V-201802.00.2.iml" filepath="$PROJECT_DIR$/Axtra-Earn-Google-V-201802.00.2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/alienfragment/alienfragment.iml" filepath="$PROJECT_DIR$/alienfragment/alienfragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/appaxtraearn/appaxtraearn.iml" filepath="$PROJECT_DIR$/appaxtraearn/appaxtraearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraryalienfragment/libraryalienfragment.iml" filepath="$PROJECT_DIR$/libraryalienfragment/libraryalienfragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/librarybeyondfragment/librarybeyondfragment.iml" filepath="$PROJECT_DIR$/librarybeyondfragment/librarybeyondfragment.iml" />
     </modules>
   </component>
 </project>

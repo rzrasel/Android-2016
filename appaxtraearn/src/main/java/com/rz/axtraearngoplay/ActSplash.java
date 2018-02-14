@@ -24,7 +24,7 @@ public class ActSplash extends AppCompatActivity {
         activity = this;
         context = this;
         animTransition = new AnimTransition();
-        Intent intentRedirectWindow = new Intent(context, ActInstruction.class);
+        Intent intentRedirectWindow = new Intent(context, ActUserLogin.class);
         intentRedirectWindow.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         intentRedirectWindow.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);

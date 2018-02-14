@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/appaxtraearn" />
             <option value="$PROJECT_DIR$/libraryalienfragment" />
+            <option value="$PROJECT_DIR$/librarybeyondfragment" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
