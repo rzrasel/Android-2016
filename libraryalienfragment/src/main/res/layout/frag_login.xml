@@ -40,7 +40,8 @@
                         android:layout_height="wrap_content"
                         android:text="Login"
                         android:textColor="#096093"
-                        android:textSize="30sp" /><!--F5EFF7-->
+                        android:textSize="30sp"
+                        app:fontFamily="@font/encode_sans_extrabold" /><!--F5EFF7-->
                 </RelativeLayout>
 
                 <View
