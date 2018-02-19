@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idRelayContainer"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/encode_sans_extralight"
+                android:gravity="left"
+                android:text="Privacy Policy"
+                android:textAllCaps="false"
+                android:textColor="#428BB6"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/encode_sans_light"
+                android:gravity="right"
+                android:text="Forgot Password?"
+                android:textAllCaps="false"
+                android:textColor="#69A7CC"
+                android:textSize="11sp" /><!--FFC47C-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dancing_script_regular"
+            android:gravity="center"
+            android:text="Powered by , Version - 1.0"
+            android:textColor="#69A7CC"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encode_sans_expanded_thin"
+            android:gravity="center"
+            android:text="By signing up, you agree to our Terms and that you have read our Privacy Policy"
+            android:textColor="#69A7CC"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>
