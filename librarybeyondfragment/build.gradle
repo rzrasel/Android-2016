@@ -6,12 +6,14 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion extMinSdkVersion
+        targetSdkVersion extTargetSdkVersion
+        versionCode extVersionCode
+        versionName extVersionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        archivesBaseName = "com.rz.beyondfragment"
+        version = android.defaultConfig.versionName
 
     }
 
@@ -21,7 +23,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+    libraryVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (outputFile != null && outputFileName.endsWith('.aar')) {
+                outputFileName = "${archivesBaseName}-v-${version}.aar"
+            }
+        }
+    }
 }
 
 dependencies {

@@ -29,9 +29,9 @@ public class FragUserLogin extends Fragment {
     @Override
     public View onCreateView(LayoutInflater argInflater, ViewGroup argContainer, Bundle argSavedInstanceState) {
         rootView = argInflater.inflate(R.layout.frag_user_login, argContainer, false);
-        sysFloatBtnSubmit = (FloatingActionButton) rootView.findViewById(R.id.sysFloatBtnSubmit);
         activity = getActivity();
         context = argContainer.getContext();
+        sysFloatBtnSubmit = (FloatingActionButton) rootView.findViewById(R.id.sysFloatBtnSubmit);
         sysFloatBtnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View argView) {
