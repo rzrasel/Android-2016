@@ -137,7 +137,7 @@
                         android:layout_marginTop="24dp"
                         android:background="@drawable/border_semi_circle_transparent"
                         android:foreground="@drawable/ripple_effect"
-                        android:text="Send"
+                        android:text="Submit"
                         android:textAllCaps="false"
                         android:textColor="#69A7CC"
                         android:textSize="20sp"
