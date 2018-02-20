@@ -1,10 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-
-
-
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+    compileSdkVersion globalConfiguration.extCompileSdkVersion
     defaultConfig {
         minSdkVersion extMinSdkVersion
         targetSdkVersion extTargetSdkVersion

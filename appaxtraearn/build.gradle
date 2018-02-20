@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+    compileSdkVersion globalConfiguration.extCompileSdkVersion
     defaultConfig {
         applicationId "com.rz.axtraearngoplay"
         minSdkVersion extMinSdkVersion
@@ -38,8 +39,8 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     //|----|------------------------------------------------|
-    compile 'com.android.support:design:26.+'
-    compile 'com.google.android.gms:play-services-location:11.8.0'
+    compile androidDependencies.design
+    compile androidDependencies.location
     compile(name: 'com.rz.varnishview.introviewpager-v-201712.0.1', ext: 'aar')
     compile(name: 'com.rz.varnishview.spinallistdrawer-v-201712.0.1', ext: 'aar')
     //compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
