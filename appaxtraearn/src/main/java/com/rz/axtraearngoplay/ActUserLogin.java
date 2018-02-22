@@ -10,11 +10,14 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.rz.alienfragment.FragAccountActivation;
 import com.rz.alienfragment.FragForgotPassword;
+import com.rz.alienfragment.FragForgotPasswordChange;
 import com.rz.alienfragment.FragLogin;
 import com.rz.alienfragment.FragRegistration;
+import com.rz.alienfragment.OnFragmentInteractionListener;
 
 public class ActUserLogin extends AppCompatActivity {
     private Activity activity;
@@ -69,6 +72,26 @@ public class ActUserLogin extends AppCompatActivity {
                     /*fragment = new FragForgotPassword();
                     loadFragment(fragment);*/
                     FragForgotPassword fragObjPass = new FragForgotPassword();
+                    fragObjPass.onSetCallbackListener(new OnFragmentInteractionListener() {
+                        @Override
+                        public void SendToActivityListener(String argStr) {
+                            //
+                        }
+
+                        @Override
+                        public void onClickListener(View argView) {
+                            toolbar.setTitle(getResources().getString(R.string.nav_forgot_password_change));
+                            FragForgotPasswordChange fragObjPassChange = new FragForgotPasswordChange();
+                            Fragment addFragment = (Fragment) fragObjPassChange;
+                            if (fragObjPassChange.fragmentIndex > currentFragmentIndex) {
+                                onLoadFragment(addFragment, true, true);
+                            } else {
+                                onLoadFragment(addFragment, true, false);
+                            }
+                            currentFragmentIndex = fragObjPassChange.fragmentIndex;
+                            return;
+                        }
+                    });
                     fragment = (Fragment) fragObjPass;
                     if (fragObjPass.fragmentIndex > currentFragmentIndex) {
                         onLoadFragment(fragment, true, true);
