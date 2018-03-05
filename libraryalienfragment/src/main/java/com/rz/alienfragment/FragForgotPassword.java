@@ -16,7 +16,7 @@ import android.widget.Button;
 public class FragForgotPassword extends Fragment {
     private Activity activity;
     private Context context;
-    public int fragmentIndex = 2;
+    public int fragmentIndex = 330;
     private Button sysBtnSubmit;
     private OnFragmentInteractionListener onFragmentInteractionListener;
 

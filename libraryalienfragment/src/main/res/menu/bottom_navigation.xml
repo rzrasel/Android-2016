@@ -6,6 +6,10 @@
         android:icon="@drawable/btn_login"
         android:title="@string/nav_login" />
     <item
+        android:id="@+id/nav_registration"
+        android:icon="@drawable/btn_registration"
+        android:title="@string/nav_registration" />
+    <item
         android:id="@+id/nav_forgot_password"
         android:icon="@drawable/btn_forgot_password"
         android:title="@string/nav_forgot_password" />
@@ -13,10 +17,6 @@
         android:id="@+id/nav_account_activation"
         android:icon="@drawable/btn_active_account"
         android:title="@string/nav_account_activation" />
-    <item
-        android:id="@+id/nav_registration"
-        android:icon="@drawable/btn_registration"
-        android:title="@string/nav_registration" />
 
     <!--<item
         android:id="@+id/nav_registration1"

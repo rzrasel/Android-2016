@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 public class FragRegistration extends Fragment {
     private Activity activity;
     private Context context;
-    public int fragmentIndex = 5;
+    public int fragmentIndex = 220;
     public FragRegistration() {
         // Required empty public constructor
     }

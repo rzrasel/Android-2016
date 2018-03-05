@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 public class FragAccountActivation extends Fragment {
     private Activity activity;
     private Context context;
-    public int fragmentIndex = 4;
+    public int fragmentIndex = 440;
     public FragAccountActivation() {
         // Required empty public constructor
     }

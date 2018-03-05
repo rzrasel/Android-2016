@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 public class FragForgotPasswordChange extends Fragment {
     private Activity activity;
     private Context context;
-    public int fragmentIndex = 3;
+    public int fragmentIndex = 331;
     private OnFragmentInteractionListener onFragmentInteractionListener;
 
     public FragForgotPasswordChange() {
