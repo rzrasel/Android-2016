@@ -27,7 +27,7 @@
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/sysToolBar"
                     android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
                     android:clipToPadding="true"></android.support.v7.widget.Toolbar>
 
             </android.support.design.widget.AppBarLayout>
@@ -51,7 +51,7 @@
             <View
                 android:id="@+id/idDrawerTopBar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
                 android:background="#AA64E4" />
 
             <ListView
